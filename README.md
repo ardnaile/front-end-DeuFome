@@ -1,5 +1,5 @@
 # Projeto Deu Fome!
-Projeto final da matéria de Front-end no curso de Engenharia de Software: aplicativo Deu Fome! 
+Projeto final da matéria de Front-end no curso de Engenharia de Software: aplicativo Deu Fome! A ideia é criar um app para a comunidade de amantes da gastronomia e possibilitar não só salvar as receitas, mas também fazer anotações e alterações nelas. Será como um grande livro de receitas compartilhado!
 
 ## Desenvolvedores do projeto:
 
@@ -21,11 +21,11 @@ A gastronomia é um campo muito amplo, com uma quantidade enorme de ingredientes
 A jornada dentro do app inicia com uma tela principal, onde estariam alguns componentes chave:
 
 - Barra de pesquisa;
-- Botão ícone que leva até o perfil do usuário;
+- Ícone (botão) que leva até a tela de login ou ao perfil do usuário caso já esteja logado;
 - Botão que abre uma aba lateral com as categorias de receitas;
-- Feed dividido em algumas categorias.
+- Feed dividido em algumas categorias, como receitas mais acessadas, receitas sem lactose, entre outras conforme as preferências do usuário.
 
-A ideia do perfil de usuário é funcionar como um livro de receitas, onde é possível ver as receitas salvas, as receitas que você postou, talvez dividi-las em pastas como no aplicativo Pinterest. Vamos testar essas funcionalidades com um protótipo e entender como os potenciais usuários vão interagir com essas telas!
+A ideia do perfil de usuário é funcionar como um livro de receitas, onde é possível ver as receitas salvas, as receitas que você postou, talvez dividi-las em pastas como no aplicativo Pinterest. Vamos testar essas funcionalidades com um protótipo e entender como os potenciais usuários vão interagir com essas telas. Além disso, teremos um botão para adicionar receita ao livro, onde o usuário poderá escrever sua receita, adicionar fotos, como em uma rede social.
 
 ## Público-alvo
 
