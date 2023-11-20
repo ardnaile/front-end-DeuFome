@@ -54,14 +54,3 @@ export default function Home() {
     </body>
   );
 };
-
-{/* <div className='text-center text-white font-bold text-2xl pb-4'> 
-<img className='cursor-pointer text-white shadow-3xl rounded-3xl' src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-</div>
-
-<div className='text-center text-white font-bold text-2xl pb-4'> 
-<img className='cursor-pointer shadow-3xl rounded-3xl' src="https://images.pexels.com/photos/19065709/pexels-photo-19065709/free-photo-of-lanchonete-comendo-comida-alimentacao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-</div>
-<div className='text-center text-white font-bold text-2xl pb-4'> 
-<img className='cursor-pointer shadow-3xl rounded-3xl' src="/src/assets/imagens/criar.png" alt="" />
-</div> */}
