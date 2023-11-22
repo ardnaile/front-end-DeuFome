@@ -6,7 +6,7 @@ export default function Login() {
        <div className="">
          <div className='bg-white shadow-md rounded-md p-4 space-y-4 w-80 px-10 py-10 pt-10 pb-10'>
          <div className="flex items-center justify-center">
-           <img className="w-100" src="/src/assets/imagens/logo.jpeg" alt="" />
+           <img className="w-80" src="/src/assets/imagens/logo.png" alt="" />
           </div>
          <h2 className='font-bold text-2xl text-center mb-6 mt-6'>Entrar</h2>
            <div>
