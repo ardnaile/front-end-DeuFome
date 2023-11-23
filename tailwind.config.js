@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      titulos: ["Dancing Script","cursive"],
+      paragrafos:["Abel","sans-serif"]
+    }
   },
   plugins: [],
 };
