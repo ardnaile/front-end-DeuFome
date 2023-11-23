@@ -9,7 +9,7 @@ export default function Home() {
       <div className=' container mx-auto justify-center mt-6'>
         <h1 className='font-titulos  text-white text-start pb-2 text-8xl pt-24'> Deu Fome seu Site de Receitas!</h1> 
         <p className='font-paragrafos pt-4 pb-4 px-4 py-4 bg-white opacity-40 text-white text-3xl rounded-lg border-2'>Aqui na deu fome você consegue compartilhar suas receitas, visualizar receitas <br /> ou montar receita do zero e compartilhar com todos, quem escolhe é você.</p>   
-       </div>   no
+       </div> 
     
       <div className='container mx-auto flex justify-center items-center space-x-6 pt-36 bg-transparent mb-10'>
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
