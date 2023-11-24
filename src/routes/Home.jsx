@@ -1,5 +1,6 @@
 import { Link,Outlet } from "react-router-dom";
 import NavBar from "../componentes/navbar";
+import Rodape from "../componentes/rodape";
 
 export default function Home() {
   return (
@@ -7,10 +8,9 @@ export default function Home() {
       <NavBar/>
       <Outlet/>    
       <div className=' container mx-auto justify-center mt-6'>
-        <h1 className='font-titulos  text-white text-start pb-2 text-8xl pt-24'> Deu Fome seu Site de Receitas!</h1> 
+        <h1 className='font-text_ale  text-white text-start pb-2 text-8xl pt-24'> Deu Fome seu Site de Receitas!</h1> 
         <p className='font-paragrafos pt-4 pb-4 px-4 py-4 bg-white opacity-60 text-black text-3xl rounded-lg border-2'>Aqui na deu fome você consegue compartilhar suas receitas, visualizar receitas <br /> ou montar receita do zero e compartilhar com todos, quem escolhe é você.</p>   
        </div> 
-    
       <div className='container mx-auto flex justify-center items-center space-x-6 pt-36 bg-transparent mb-10'>
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
           <Link to="/Pizza" >
@@ -33,15 +33,7 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam deleniti impedit a, quod ducimus delectus! Saepe eos necessitatibus eveniet eaque, porro veritatis numquam sequi reprehenderit totam sunt nobis sed quidem.</p>
       </div>
 
-      <div className='flex justify-center items-center text-center w-screen space-x-6 pt-20 pb-2 px-2 bg-white'>
-        <div className="font-light cursor-pointer">
-          <img src="/src/assets/imagens/icons8-facebook-100.png" alt="" /> @deuFome?
-        </div>
-        <div className="font-light cursor-pointer"> 
-          <img src="/src/assets/imagens/icons8-instagram-100.png" alt="" /> @deuFome?
-        </div>
-    
-      </div>
+    <Rodape/>
     </body>
   );
 };

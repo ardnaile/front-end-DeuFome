@@ -8,7 +8,8 @@ export default {
     extend: {},
     fontFamily:{
       titulos: ["Dancing Script","cursive"],
-      paragrafos:["Abel","sans-serif"]
+      paragrafos:["Abel","sans-serif"],
+      text_ale:["Atma","sans-serif"]
     }
   },
   plugins: [],
