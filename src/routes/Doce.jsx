@@ -18,7 +18,7 @@ export default function Pizza() {
 
           <div className="flex justify-center">
             <div className="max-w-3xl w-full grid grid-cols-1 sm:grid-cols-1 gap-6 mt-4">
-              <div className="bg-white border-t-4 border-red-900 rounded-xl p-6 shadow-md rounded-md grid grid-cols-3 gap-6 relative h-full">
+              <div className="bg-white border-t-4 border-red-900 rounded-xl p-6 shadow-md grid grid-cols-3 gap-6 relative h-full">
                 <div className="col-span-2">
                   <h1 className="text-red-900 font-bold text-2xl">Ingredientes:</h1>
                   <ul className="list-disc ml-4">
