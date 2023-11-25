@@ -9,7 +9,7 @@
 :root {
   /* @apply font-sans; */
   font-size: 14px;
-  background-image: url("/src/assets/imagens/Home.png"); 
+  /* background-image: url("/src/assets/imagens/img-fundo/pizza.jpg");  */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -1,11 +1,13 @@
 import {Link, Outlet} from "react-router-dom";
 import Rodape from "../componentes/rodape";
+import BackgroundLayout from "../estilos/VariosBackgrounds";
 
 export default function Login() {
     return (
-     <body>
+      <div>
+        <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
       <div className="bg-white w-screen mx-auto px-6 py-6 flex items-center justify-center">
-        <img className="w-24 items-center" src="/src/assets/imagens/logo.svg" alt="" />
+        <img className="w-24 items-center" src="/src/assets/imagens/icones/logo.svg" alt="" />
       </div>
       <form className="w-300 mx-auto flex items-center h-screen w-screen justify-center bg-transparent" >
        <div className="bg-white shadow-md rounded-2xl w-80 px-10 py-10 pt-10 pb-10">
@@ -47,8 +49,8 @@ export default function Login() {
         </div>
        </div>
        </form>
-       <Outlet/>
        <Rodape/>
-     </body>
+       </BackgroundLayout>
+       </div>
    );
  };

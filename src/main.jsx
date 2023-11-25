@@ -5,6 +5,7 @@ import Doce from './routes/Doce'
 import Home from './routes/Home'
 import Pizza from './routes/Pizza'
 import Login from './routes/login'
+import Pizza_lista from './routes/Pizza-lista'
 import './style.css'
 
 
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
     element:<Home />,
   },      
   {
-    path:"/Pizza",
-    element:<Pizza />,
+    path:"/Pizza-lista",
+    element:<Pizza_lista/>,
   },
   {
     path:"/Doce",
