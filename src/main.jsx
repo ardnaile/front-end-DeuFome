@@ -5,6 +5,7 @@ import Doce from './routes/Doce'
 import Home from './routes/Home'
 import Login from './routes/login'
 import Pizza_lista from './routes/Pizza-lista'
+import CadReceita from './routes/CadReceita'
 import './style.css'
 
 
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     element:<App />,
   },
   {
-    path:"/Login",
+    path:"/login",
     element:<Login />,
   },
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path:"/Doce",
     element:<Doce />,
+  },
+  {
+    path:"/CadReceita",
+    element:<CadReceita />,
   },
   
 ]);
