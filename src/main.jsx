@@ -7,6 +7,7 @@ import Login from './routes/login'
 import Pizza_lista from './routes/Pizza-lista'
 import CadReceita from './routes/CadReceita'
 import './style.css'
+import CadastroForm from './routes/CadUsers'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
     path:"/CadReceita",
     element:<CadReceita />,
   },
+  {
+    path:"/CadUsers",
+    element:<CadastroForm />,
+  },
+  
   
 ]);
 
