@@ -28,8 +28,6 @@ export default function Login() {
       // Validar as credenciais
       if (username === fictitiousUser.username && password === fictitiousUser.password) {
         alert('Login bem-sucedido!');
-       
-        // Faça o que for necessário após o login bem-sucedido
       } else {
         alert('Credenciais inválidas. Tente novamente.');
         e.preventDefault();
