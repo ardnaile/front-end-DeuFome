@@ -1,3 +1,5 @@
+// Configurações do Tailwind
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {},
+    // Estilos personalizados de fontes:
     fontFamily:{
       titulos: ["Dancing Script","cursive"],
       paragrafos:["Abel","sans-serif"],

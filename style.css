@@ -1,0 +1,21 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@500&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@700&family=Open+Sans:wght@300;400;500&family=Raleway:wght@300;700&display=swap');
+
+/* Importando módulos do Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definindo estilos globais */
+:root {
+  /* @apply font-sans; */
+  font-size: 14px;
+  /* background-image: url("/src/assets/imagens/img-fundo/pizza.jpg");  */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
