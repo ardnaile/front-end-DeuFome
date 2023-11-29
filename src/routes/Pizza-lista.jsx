@@ -5,7 +5,7 @@ import Rodape from '../componentes/rodape';
 
 export default function Pizza_lista() {
   return (
-    <div className='mb-4'>
+    <div className='mb-4 mx-auto w-screen h-screen'>
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
          <NavBar/>
         <div className="container mx-auto bg-white rounded-md border-y-4 border-red-900 mb-8 mt-8 "> 

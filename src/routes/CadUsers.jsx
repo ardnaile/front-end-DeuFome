@@ -19,7 +19,7 @@ export default function CadUsers( onCadastro ) {
       };   
 
     return (
-        <div className='bg-transparent' >
+        <div className='bg-transparent mx-auto w-screen h-screen' >
             <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
             <NavBar/>
             <div className='max-w-3xl mx-auto mt-8'>

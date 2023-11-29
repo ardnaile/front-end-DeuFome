@@ -36,7 +36,7 @@ export default function Login() {
 
    
   return (
-      <div>
+      <div className="mx-auto w-screen h-screen">
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
       <div className=" bg-white w-screen mx-auto px-6 py-6 flex items-center justify-center">
         <img className="w-24 items-center" src="/src/assets/imagens/icones/logo.svg" alt="" />
