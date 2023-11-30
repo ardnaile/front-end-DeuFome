@@ -13,6 +13,7 @@ export default {
       titulos: ["Dancing Script","cursive"],
       paragrafos:["Abel","sans-serif"],
       text_ale:["Atma","sans-serif"]
+
     }
   },
   plugins: [],
