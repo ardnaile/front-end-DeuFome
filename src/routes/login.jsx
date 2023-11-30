@@ -1,9 +1,7 @@
 import {Link} from "react-router-dom";
 import Rodape from "../componentes/rodape";
 import BackgroundLayout from "../estilos/VariosBackgrounds";
-
 import { useState } from 'react';
-
 
 export default function Login() {
   
@@ -43,7 +41,7 @@ export default function Login() {
       </div>
       <form className="max-w-xl mx-auto flex items-center h-screen w-screen justify-center bg-transparent" >
        <div className="bg-white shadow-md rounded-2xl w-80 px-10 py-10 pt-10 pb-10">
-        <h2 className='font-bold text-4xl text-center mb-6 '>Entrar</h2>
+          <h2 className='font-bold text-4xl text-center mb-6 '>Entrar</h2>
         <div className="flex flex-col items-center">
           <button className="bg-blue-600 hover:bg-blue-800 rounded-2xl w-full text-white px-4 pt-2 py-2 mb-4">Entrar com o facebook</button>
           <button className="bg-red-500 hover:bg-red-600 rounded-2xl w-full text-white px-4 pt-2 py-2 mb-4">Entrar com o gmail</button>
@@ -54,12 +52,8 @@ export default function Login() {
           </div>
         </div>
         <div>
-             <label className='block text-sm font-bold text-gray-800 mb-2 ' for="email">E-mail</label>
-             <input 
-              name="nome" 
-              value={username} 
-              onChange={handleUsernameChange} 
-              required
+            <label className='block text-sm font-bold text-gray-800 mb-2 ' for="email">E-mail</label>
+            <input name="nome" value={username} onChange={handleUsernameChange} required
               className='block transition duration-200 ease-in-out focus:outline-none w-full bg-gray-50 border border-gray-800 rounded px-2 py-1 mb-4 text-base text-gray-800 placeholder:text-gray-300'  
               type="text" 
               placeholder='Digite seu e-mail' />
