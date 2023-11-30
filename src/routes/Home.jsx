@@ -10,11 +10,12 @@ export default function Home() {
       <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/Home.png')`}>
         <NavBar/>
       <div className=' container mx-auto justify-center mt-6'>
-        <h1 className='font-text_ale  text-white text-start pb-2 text-8xl pt-24'> Deu Fome seu Site de Receitas!</h1> 
-        <p className='font-paragrafos pt-4 pb-4 px-4 py-4 bg-white opacity-60 text-black text-3xl rounded-lg border-2'>Aqui na deu fome você consegue compartilhar suas receitas, visualizar receitas <br /> ou montar receita do zero e compartilhar com todos, quem escolhe é você.</p>   
+        <h1 className='font-text_ale  text-white text-start pb-2 text-8xl pt-24'> Deu Fome?</h1>
+        <h6 className='font-text_ale text-white text-start pb-2 text-4xl'> Então, bora cozinhar! </h6> 
+        <p className='font-paragrafos pt-4 pb-4 px-4 py-4 bg-white opacity-60 text-black text-3xl rounded-lg border-2'> Navegue pelo site para procurar novas receitas ou compartilhar seus conhecimentos culinários com a comunidade.</p>   
       </div> 
 
-      <div className='container mx-auto flex justify-center items-center space-x-6 pt-36 bg-transparent mb-10'>
+      <div className='container mx-auto flex justify-center items-center space-x-6 pt-27 pb-27 bg-transparent'>
         
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
           <Link to="/Pizza-lista" >
@@ -33,29 +34,29 @@ export default function Home() {
 
       </div>
 
-      <div className=' bg-white flex  justify-center items-center mb-8 pt-2'>
+      <div className=' bg-white flex justify-center items-center mb-8 pt-2 px-10'>
           <div className="mt-8">
-            <img className="w-96 rounded-full border-2 shadow-lg mr-8" src="./src/assets/imagens/img-fundo/chefe.png" alt="" />
+            <img className="w-80 rounded-full border-2 shadow-lg mr-8" src="./src/assets/imagens/img-fundo/chefe.png" alt="" />
           </div>
           <div className="rounded- mt-8 mr-8">
-            <h2 className="font-text_ale mt-2 text-3xl">
+            <h2 className="font-text_ale mt-2 text-3xl m-3">
               Chefe Kang 
             </h2>
-            <p className="mb-4 font-paragrafos">Chefe Kang nasceu na china no de 1945.<br/>Está sempre criando novas receitas e<br /> compartilhando aqui na deu fome.<br /></p>
-            <p className="mb-2 font-paragrafos text-2xl">Kang sempre diz: <br /></p>
-            <p className="mb-4 font-text_ale border-x-2 border-red-900 p-4">"Tudo que se move e rasteja a gente flita,<br /> tudo é comida".</p>
+            <p className="ml-3 mb-4 font-paragrafos w-40 break-words">Chefe Kang nasceu na china no ano de 1945.Está sempre criando novas receitas e compartilhando aqui na deu fome.<br /></p>
+            <p className="m-3 font-paragrafos text-2xl">Kang sempre diz: <br /></p>
+            <p className="mb-4 font-text_ale border-l-2 border-red-900 p-2 w-50 m-2">"Tudo que se move e rasteja a gente flita, tudo é comida".</p>
           </div>
 
           <div className="mt-8">
-            <img className="w-96 rounded-full border-2 shadow-lg mr-8" src="./src/assets/imagens/img-fundo/chefe.png" alt="" />
+            <img className="w-80 rounded-full border-2 shadow-lg mr-8" src="./src/assets/imagens/img-fundo/chefe.png" alt="" />
           </div>
           <div className="rounded- mt-8 mr-8">
-            <h2 className="font-text_ale mt-2 text-3xl">
+            <h2 className="font-text_ale mt-2 text-3xl m-3">
               Chefe Kang 
             </h2>
-            <p className="mb-4 font-paragrafos">Chefe Kang nasceu na china no de 1945.<br/>Está sempre criando novas receitas e<br /> compartilhando aqui na deu fome.<br /></p>
-            <p className="mb-2 font-paragrafos text-2xl">Kang sempre diz: <br /></p>
-            <p className="mb-4 font-text_ale border-x-2 border-red-900 p-4">"Tudo que se move e rasteja a gente flita,<br /> tudo é comida".</p>
+            <p className="ml-3 mb-4 font-paragrafos w-40 break-words">Chefe Kang nasceu na china no ano de 1945.Está sempre criando novas receitas e compartilhando aqui na deu fome.<br /></p>
+            <p className="m-3 font-paragrafos text-2xl">Kang sempre diz: <br /></p>
+            <p className="mb-4 font-text_ale border-l-2 border-red-900 p-2 w-50 m-2">"Tudo que se move e rasteja a gente flita, tudo é comida".</p>
           </div> 
       </div>
       </BackgroundLayout>

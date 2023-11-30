@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import Rodape from "../componentes/rodape";
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import { useState } from 'react';
+import NavBar from "../componentes/navbar";
 
 export default function Login() {
   
@@ -36,9 +37,7 @@ export default function Login() {
   return (
       <div className="mx-auto w-screen h-screen">
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
-      <div className=" bg-white w-screen mx-auto px-6 py-6 flex items-center justify-center">
-        <img className="w-24 items-center" src="/src/assets/imagens/icones/logo.svg" alt="" />
-      </div>
+      <NavBar/>   
       <form className="max-w-xl mx-auto flex items-center h-screen w-screen justify-center bg-transparent" >
        <div className="bg-white shadow-md rounded-2xl w-80 px-10 py-10 pt-10 pb-10">
           <h2 className='font-bold text-4xl text-center mb-6 '>Entrar</h2>

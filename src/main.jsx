@@ -8,6 +8,7 @@ import Pizza_lista from './routes/Pizza-lista'
 import CadReceita from './routes/CadReceita'
 import './style.css'
 import CadastroForm from './routes/CadUsers'
+import MassasLista from './routes/Massas-lista'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -41,8 +42,10 @@ const router = createBrowserRouter([
     path:"/CadUsers",
     element:<CadastroForm />,
   },
-  
-  
+  {
+    path:"/Massas-lista",
+    element:<MassasLista />,
+  },
 ]);
 
 

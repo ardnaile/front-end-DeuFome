@@ -3,7 +3,7 @@ import NavBar from '../componentes/navbar'
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import Rodape from '../componentes/rodape';
 
-export default function Pizza_lista() {
+export default function MassasLista() {
   return (
     <div className='mb-4'>
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
@@ -17,9 +17,10 @@ export default function Pizza_lista() {
                         <h1 className=" text-red-900 font-bold text-2xl">Macarrão à Bolonhesa</h1>
                         <p>O clássico da culinária italiana é o prato preferido de muitos brasileiros. Essa versão é bem tradicional e leva carne moída, azeite, cebola, caldo, tomate, molho pronto, azeitonas e cenoura. Confira o passo a passo e aproveite!</p>
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        <button className='bg-red-500 rounded-3xl mx-2 h-10 w-10'> usu </button>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                  
-                        <img className="w-46 rounded-full   border-orange-300 shadow-1xl px-16 " src='src\assets\imagens\imagensMassas\macarrao1.jpg'/>
+                        <img className="w-46 rounded-full   border-orange-300 shadow-1xl"  src='src\assets\imagens\imagensMassas\macarraoBolonhesa.jpg'/>
                     </div>
                 </div>
 
