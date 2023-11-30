@@ -9,6 +9,7 @@ import CadReceita from './routes/CadReceita'
 import './style.css'
 import CadastroForm from './routes/CadUsers'
 import MassasLista from './routes/Massas-lista'
+import Categorias from './routes/Categorias'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path:"/Massas-lista",
     element:<MassasLista />,
+  },
+  {
+    path:"/Categorias",
+    element:<Categorias />,
   },
 ]);
 

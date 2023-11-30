@@ -6,16 +6,16 @@ import BackgroundLayout from "../estilos/VariosBackgrounds";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen mx-auto">
+    <div className="w-screen mx-auto">
       <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/Home.png')`}>
         <NavBar/>
-      <div className=' container mx-auto justify-center mt-6'>
-        <h1 className='font-text_ale  text-white text-start pb-2 text-8xl pt-24'> Deu Fome?</h1>
-        <h6 className='font-text_ale text-white text-start pb-2 text-4xl'> Então, bora cozinhar! </h6> 
+      <div className='container mx-auto justify-center mb-16'>
+        <h1 className='font-text_ale  text-white text-start  text-8xl  mt-16'> Deu Fome?</h1>
+        <h6 className='font-text_ale text-white text-start pb-2 text-4xl'>Então, bora cozinhar! </h6> 
         <p className='font-paragrafos pt-4 pb-4 px-4 py-4 bg-white opacity-60 text-black text-3xl rounded-lg border-2'> Navegue pelo site para procurar novas receitas ou compartilhar seus conhecimentos culinários com a comunidade.</p>   
       </div> 
 
-      <div className='container mx-auto flex justify-center items-center space-x-6 pt-27 pb-27 bg-transparent'>
+      <div className='container mx-auto flex justify-center items-center space-x-6 mb-8 bg-transparent'>
         
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
           <Link to="/Pizza-lista" >
@@ -24,7 +24,9 @@ export default function Home() {
         </div>
 
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
-          <img className='hover:blur-sm hover transition duration-300 cursor-pointer shadow-3xl rounded-3xl ' src="https://images.pexels.com/photos/19065709/pexels-photo-19065709/free-photo-of-lanchonete-comendo-comida-alimentacao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          <Link to="/Massas-lista">
+            <img className='hover:blur-sm hover transition duration-300 cursor-pointer shadow-3xl rounded-3xl ' src="https://images.pexels.com/photos/19065709/pexels-photo-19065709/free-photo-of-lanchonete-comendo-comida-alimentacao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          </Link>
         </div>
         <div className='text-center text-white font-bold text-2xl pb-4 pt-6'> 
           <Link to="/Doce" >
