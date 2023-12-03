@@ -10,6 +10,8 @@ import './style.css'
 import CadastroForm from './routes/CadUsers'
 import MassasLista from './routes/Massas-lista'
 import Categorias from './routes/Categorias'
+import Receitas from './routes/Receitas-lista'
+import ReceitaExibe from './routes/Receitas-exibe'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
   {
     path:"/Categorias",
     element:<Categorias />,
+  },
+  {
+    path:"/Receitas-lista",
+    element:<Receitas />,
+  },
+  {
+    path:"/receitas/:id",
+    element:<ReceitaExibe />,
   },
 ]);
 

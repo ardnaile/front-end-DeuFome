@@ -20,8 +20,8 @@ export default function Login() {
     const handleSubmit = (e) => {
       // Usuário fictício para validação
       const fictitiousUser = {
-        username: 'Rafael',
-        password: '1234',
+        username: 'deufome',
+        password: 'deufome',
       };
 
       // Validar as credenciais
@@ -37,7 +37,7 @@ export default function Login() {
   return (
       <div className="mx-auto w-screen h-screen">
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
-      <NavBar/>   
+      {/* <NavBar/>    */}
       <form className="max-w-xl mx-auto flex items-center h-screen w-screen justify-center bg-transparent" >
        <div className="bg-white shadow-md rounded-2xl w-80 px-10 py-10 pt-10 pb-10">
           <h2 className='font-bold text-4xl text-center mb-6 '>Entrar</h2>

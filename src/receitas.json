@@ -1,0 +1,9 @@
+[
+    { "id": 1, "name": "Macarronada", "ingredientes": ["Macarração ","Molho de tomate ","Queijo mussarela ralado"] },
+    { "id": 2, "name": "Smartphone", "ingredientes": 1200.0 },
+    { "id": 3, "name": "Tablet", "ingredientes": 800.0 },
+    { "id": 4, "name": "Smartwatch", "ingredientes": 400.0 },
+    { "id": 5, "name": "Mouse", "ingredientes": 40.0 },
+    { "id": 6, "name": "Teclado", "ingredientes": 140.0 }
+]
+  

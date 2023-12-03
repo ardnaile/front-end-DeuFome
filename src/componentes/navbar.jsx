@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 export default function NavBar() {
     return (
-     <div className='container'>
-        <div className='w-screen mx-auto px-3 py-4 font-extralights shadow-3xl border-y-2 bg-white flex  items-center '>
+     <nav className='relative'>
+        <div className='w-screen mx-auto px-3 py-4 font-extra lights shadow-3xl  bg-white flex  items-center '>
             <img className='w-36 p-3 cursor-pointer' src="/src/assets/imagens/icones/logo.svg" alt=""/>
             <Link to="/Home">
                 <ul className="mr-4 cursor-pointer text-xl hover:text-red-900 hover:font-semibold" >Home</ul>
@@ -20,11 +20,14 @@ export default function NavBar() {
             <div className="mx-auto flex items-center justify-center">
                 <input className="px-2 py-2 text-2xl rounded-2xl transition duration-200 ease-in-out focus:outline-none bg-gray-50 border border-gray-800  w-96" type="text" placeholder="Pesquisar receitas" />   
                 <img className="w-12 mr-16" src="/src/assets/imagens/icones/search.svg" alt="" />
+                
             </div>
 
             <div className="flex justify-end items-center px-6">
                 <ul className="mr-4 cursor-pointer  text-xl hover:text-red-900 hover:font-semibold">Nome do usuario</ul>
-                <img className='w-14 cursor-pointer ' src="/src/assets/imagens/icones/user.png" alt="usuario" />
+                <Link to="/login">
+                    <img className='w-14 cursor-pointer ' src="/src/assets/imagens/icones/user.png" alt="usuario" />
+                </Link>
             </div>
                     
 
@@ -42,6 +45,6 @@ export default function NavBar() {
                
          
         </div>
-      </div>
+      </nav>
     )
 }
