@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import Doce from './routes/Doce'
+import Doce from './routes/Doce-lista'
 import Home from './routes/Home'
 import Login from './routes/login'
 import Pizza_lista from './routes/Pizza-lista'
@@ -20,7 +20,8 @@ import Macarraoquatroqueijos from './routes/Macarrao4Queijos'
 import MacarraocomSalsicha from './routes/MacarraoSalsicha'
 import Perfil from './routes/Perfil'
 import ChurroscomChocolate from './routes/churros'
-
+import Cokkieperfeito from './routes/cokkieReceita'
+import Paozinhodemel from './routes/PaodeMel'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -100,6 +101,14 @@ const router = createBrowserRouter([
   {
     path:"/churros",
     element:<ChurroscomChocolate/>,
+  },
+  {
+    path:"/cokkieReceita",
+    element:<Cokkieperfeito/>,
+  },
+  {
+    path:"/PaodeMel",
+    element:<Paozinhodemel/>,
   },
 ]);
 

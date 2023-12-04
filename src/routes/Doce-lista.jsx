@@ -31,7 +31,9 @@ export default function Pizza() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Cookie Perfeito</h1>
                         <p>Os primeiros relatos sobre o cookie são do século XVII, mas quem criou a receita que conhecemos hoje foi a americana Ruth Wakefield, em 1930. De acordo com a chef confeiteira Karyne Iancoski, o preparo é fácil, mas requer alguns cuidados para que eles saiam perfeitos do forno. </p>
-                        <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        <Link to="/cokkieReceita">
+                          <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        </Link>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                    
                         <img className="w-46 rounded-full   border-orange-300 shadow-1xl" src='src\assets\imagens\imagensDoce\cookies.jpg'/>
@@ -42,7 +44,9 @@ export default function Pizza() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Pão de Mel</h1>
                         <p>Descubra o prazer único do nosso pão de mel artesanal, onde o mel se entrelaça delicadamente com especiarias e chocolate de alta qualidade. Cada mordida é uma explosão de sabores, resultado de uma cuidadosa produção artesanal. Nossos pães de mel são feitos com ingredientes selecionados, proporcionando uma experiência irresistível em cada pedaço. Seja para presentear alguém especial ou para se deliciar em momentos especiais, nossos pães de mel são a escolha perfeita. Permita-se saborear o melhor da confeitaria em cada mordida.</p>
+                        <Link to="/PaodeMel">
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        </Link>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                       
                         <img className="w-46 rounded-full   border-orange-300 shadow-1xl" src='src\assets\imagens\imagensDoce\paodemel.webp'/>
