@@ -8,6 +8,9 @@ import MaisIngredientes from '../componentes/criarInputELabelIngredientes';
 
 
 export default function CadReceita() {
+  const Mensagem = () => {
+    alert("Receita criada com sucesso!")
+  }
 
   const [ingredientes, setIngredientes] = useState([]);
   const [quantidades, setQuantidades] = useState([]);
@@ -91,9 +94,9 @@ export default function CadReceita() {
     
                   <div className='p-4 flex justify-center items-center mt-4'>
                      <Link to="/Receitas-lista">
-                      <button className='bg-green-400 px-4 py-2 font-semibold text-white rounded-md mr-4' type="submit">Criar receita</button>
+                      <button className='bg-green-400 px-4 py-2 font-semibold text-white rounded-md mr-4' onClick={Mensagem} type="submit">Criar receita</button>
                     </Link>
-                    <button className='bg-red-500 px-4 py-2 font-semibold text-white rounded-md ' type="submit">Cancelar</button>
+                    <button className='bg-red-500 px-4 py-2 font-semibold text-white rounded-md ' type="cancel">Cancelar</button>
                   </div>
 
                 </div>

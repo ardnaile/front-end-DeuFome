@@ -14,8 +14,8 @@ export default function NavBar() {
             <Link to="/CadReceita">
                 <ul className="mr-4 cursor-pointer text-xl hover:text-red-900 hover:font-semibold">Montar receita</ul>
             </Link>
-            <Link to="/Home">
-                <ul className="mr-4 cursor-pointer text-xl hover:text-red-900 hover:font-semibold">Receitas</ul> 
+            <Link to="/Receitas-lista">
+                <ul className="mr-4 cursor-pointer text-xl hover:text-red-900 hover:font-semibold">Minhas Receitas</ul> 
             </Link>
             <div className="mx-auto flex items-center justify-center">
                 <input className="px-2 py-2 text-2xl rounded-2xl transition duration-200 ease-in-out focus:outline-none bg-gray-50 border border-gray-800  w-96" type="text" placeholder="Pesquisar receitas" />   

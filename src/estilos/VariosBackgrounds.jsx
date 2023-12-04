@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BackgroundContainer = styled.div`
-    height: 100vh;
+    // height: 100vh;
     //  background-size: cover ; 
-    //  background-position: center;
+     background-position: center;
     // display: column;
     // justify-content: center;
     //  align-items: center;
