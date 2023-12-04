@@ -12,7 +12,7 @@ export default function Pizza() {
           <Outlet />
           <div className="flex justify-center">  
             <div className="text-red-900 max-w-3xl w-full font-bold text-3xl pt-4 pb-4 border-t-4 border-red-900 rounded-xl bg-white text-center">
-              Pizza de Calabresa
+              Pizza de Bacon
             </div> 
           </div>
 

@@ -12,7 +12,9 @@ import MassasLista from './routes/Massas-lista'
 import Categorias from './routes/Categorias'
 import Receitas from './routes/Receitas-lista'
 import ReceitaExibe from './routes/Receitas-exibe'
-
+import Pizza from './routes/PizzaCalabresa'
+import PizzaBacon from './routes/PizzaBacon'
+import Pizzaquatroqueijos from './routes/PizzaFourQueijos'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -61,6 +63,18 @@ const router = createBrowserRouter([
     path:"/receitas/:id",
     element:<ReceitaExibe />,
   },
+  {
+    path:"/PizzaCalabresa",
+    element:<Pizza/>,
+  },
+  {
+    path:"/PizzaBacon",
+    element:<PizzaBacon/>,
+  },
+  {
+    path:"/PizzaFourQueijos",
+    element:<Pizzaquatroqueijos/>,
+  },
 ]);
 
 
@@ -69,3 +83,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={router}/>
   </React.StrictMode>
 )
+
