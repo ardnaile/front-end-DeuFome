@@ -35,9 +35,9 @@ export default function Pizza() {
                 </div>
                 <div className="col-span- flex flex-col items-center justify-center mt-8 relative overflow-hidden">
                   <img
-                    src="C:\Users\walla\Desktop\front-end-DeuFome\src\assets\imagens\imagensMassas\macarraoBolonhesa.jpg"
+                    src="src\assets\imagens\imagensMassas\macarraoBolonhesa.jpg"
                     alt="Macarrão à bolonhesa"
-                    className="border-2 mt-10 border-solid border-white"
+                    className="border-3 mt-10 border-solid border-white rounded-xl"
                   />
                 </div>
                 <div className="col-span-3">

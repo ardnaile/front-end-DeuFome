@@ -38,7 +38,7 @@ export default function Pizza() {
                   <img
                     src="src\assets\imagens\imagensMassas\MacarraoQueijo.jpg"
                     alt="Macarrão 4 Queijos"
-                    className="border-2 mt-10 border-solid border-white"
+                    className="rounded-xl border-2 mt-10 border-solid border-white"
                   />
                 </div>
                 <div className="col-span-3">

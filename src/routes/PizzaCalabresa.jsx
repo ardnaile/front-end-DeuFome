@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import NavBar from "../componentes/navbar";
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import Rodape from "../componentes/rodape";
+import { Link } from "react-router-dom";
 
 export default function Pizza() {
   return (

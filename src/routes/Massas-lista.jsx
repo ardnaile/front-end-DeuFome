@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../componentes/navbar'
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import Rodape from '../componentes/rodape';
+import { Link } from "react-router-dom";
 
 export default function MassasLista() {
   return (
@@ -16,7 +17,9 @@ export default function MassasLista() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Macarrão à Bolonhesa</h1>
                         <p>O clássico da culinária italiana é o prato preferido de muitos brasileiros. Essa versão é bem tradicional e leva carne moída, azeite, cebola, caldo, tomate, molho pronto, azeitonas e cenoura. Confira o passo a passo e aproveite!</p>
+                        <Link to="/MacarraoBolonhese">
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        </Link>
                         <button className='bg-red-500 rounded-3xl mx-2 h-10 w-10'> usu </button>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                  
@@ -28,7 +31,9 @@ export default function MassasLista() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Macarrão com salsicha</h1>
                         <p>Tem que preparar algo rápido? Então essa sugestão é para você! Você precisará de apenas 15 minutos e uma panela de pressão para fazer esse macarrão de salsicha com molho cremoso de tomate. Apesar de simples, o resultado é uma delícia.</p>
+                        <Link to="/MacarraoSalsicha">
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        </Link>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                    
                         <img className="w-46 rounded-full   border-orange-300 shadow-1xl" src='src\assets\imagens\imagensMassas\MacarraoSalsicha.jpg'/>
@@ -39,7 +44,9 @@ export default function MassasLista() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Macarrão 4 Queijos</h1>
                         <p>Mais uma receita fácil e cheia de sabor, já que aposta em um delicioso molho branco de quatro queijos. Combinando gorgonzola, prato, provolone e parmesão, já dá para imaginar que o resultado será irresistível, não é mesmo?</p>
+                        <Link to="/Macarrao4Queijos">
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
+                        </Link>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                       
                         <img className="w-46 rounded-full   border-orange-300 shadow-1xl" src='src\assets\imagens\imagensMassas\MacarraoQueijo.jpg'/>

@@ -15,6 +15,9 @@ import ReceitaExibe from './routes/Receitas-exibe'
 import Pizza from './routes/PizzaCalabresa'
 import PizzaBacon from './routes/PizzaBacon'
 import Pizzaquatroqueijos from './routes/PizzaFourQueijos'
+import Macarraoabolonhesa from './routes/MacarraoBolonhese'
+import Macarraoquatroqueijos from './routes/Macarrao4Queijos'
+import MacarraocomSalsicha from './routes/MacarraoSalsicha'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -74,6 +77,18 @@ const router = createBrowserRouter([
   {
     path:"/PizzaFourQueijos",
     element:<Pizzaquatroqueijos/>,
+  },
+  {
+    path:"/MacarraoBolonhese",
+    element:<Macarraoabolonhesa/>,
+  },
+  {
+    path:"/Macarrao4Queijos",
+    element:<Macarraoquatroqueijos/>,
+  },
+  {
+    path:"/MacarraoSalsicha",
+    element:<MacarraocomSalsicha/>,
   },
 ]);
 
