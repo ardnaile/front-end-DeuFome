@@ -20,7 +20,7 @@ export default function MassasLista() {
                         <Link to="/MacarraoBolonhese">
                         <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
                         </Link>
-                        <button className='bg-red-500 rounded-3xl mx-2 h-10 w-10'> usu </button>
+                        {/* <button className='bg-red-500 rounded-3xl mx-2 h-10 w-10'> usu </button> */}
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                  
                         <img className="w-46 rounded-full   border-orange-300 shadow-1xl"  src='src\assets\imagens\imagensMassas\macarraoBolonhesa.jpg'/>
