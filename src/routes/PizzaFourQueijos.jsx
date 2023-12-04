@@ -35,7 +35,7 @@ export default function Pizza() {
                     <li>1 colher (chá) de orégano.</li>
                   </ul>
                 </div>
-                <div className="col-span- flex flex-col items-center justify-center mt-8 relative overflow-hidden">
+                <div className="col-span flex flex-col items-center justify-center mt-8 relative overflow-hidden">
                   <img
                     src="/src/assets/imagens/imagensPizza/4queijo.png"
                     alt="Pizza 4 Queijos"

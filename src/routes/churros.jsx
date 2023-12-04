@@ -6,13 +6,13 @@ import Rodape from "../componentes/rodape";
 export default function Pizza() {
   return (
     <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/Home.png')`}> 
-      <NavBar />
       <div className="flex justify-center items-center min-h-screen">
         <div className="bg-transparent p-8 rounded-xl">
+          <NavBar />
           <Outlet />
           <div className="flex justify-center">  
             <div className="text-red-900 max-w-3xl w-full font-bold text-3xl pt-4 pb-4 border-t-4 border-red-900 rounded-xl bg-white text-center">
-              Pizza de Calabresa
+              Churros com Chocolate
             </div> 
           </div>
 
@@ -22,33 +22,30 @@ export default function Pizza() {
                 <div className="col-span-2">
                   <h1 className="text-red-900 font-bold text-2xl">Ingredientes:</h1>
                   <ul className="list-disc ml-4">
-                  <li>Pique a linguiça em pedaços pequenos.</li>
-                    <li>1 colher (sopa) de Azeite de oliva extravirgem.</li>
-                    <li>1 unidade de Massa para pizza Massa Leve.</li>
-                    <li>5 colheres (sopa) de Molho de tomate caseiro (tomate, cebola e/ou alho).</li>
-                    <li>100 gramas de Palmito, juçara, em conserva.</li>
-                    <li>250 gramas de Queijo muçarela.</li>
-                    <li>100 gramas de tomate.</li>
-                    <li>100 gramas de batata palha.</li>
-                    <li>Orégano seco à gosto.</li>
+                    <li>200 g de farinha de trigo;</li>
+                    <li>1 colher (chá) de sal;</li>
+                    <li>1 colher (sopa) de açúcar;</li>
+                    <li>275 ml de água;</li>
+                    <li>1 ovo;</li>
+                    <li>1 gema;</li>
+                    <li>1 colher (chá) de essência de baunilha;</li>
+                    <li>Óleo para fritar;</li>
+                    <li>Canela em pó e açúcar para polvilhar.</li>
                   </ul>
                 </div>
                 <div className="col-span- flex flex-col items-center justify-center mt-8 relative overflow-hidden">
                   <img
-                    src="/src/assets/imagens/imagensPizza/calabresa.png"
-                    alt="Pizza de Calabresa"
-                    className="border-2 mt-10 border-solid border-white"
+                    src="src\assets\imagens\imagensDoce\churros.jpg"
+                    alt="Pizza 4 Queijos"
+                    className="border-2 mt-10 border-solid border-white rounded-xl"
                   />
                 </div>
                 <div className="col-span-3">
                   <h1 className="font-bold text-2xl text-red-900">Modo de Preparo:</h1>
                   <ol className="list-decimal ml-4">
-                  <li>Em um recipiente, coloque a farinha peneirada, o fermento e o sal e misture.</li>
-                    <li>Faça uma cova no centro e acrescente a água e o óleo.</li>
-                    <li>Amasse bem e abra com o rolo, formando uma massa lisa.</li>
-                    <li>Unte uma forma para pizza (média) e modele a massa dentro.</li>
-                    <li>Despeje sobre a massa um pouco de molho de tomate, espalhe a linguiça e cubra com cebola.</li>
-                    <li>Decore com azeitonas, tempere com orégano e leve ao forno médio (180°C) preaquecido por 20 minutos, ou até a massa ficar assada.</li>
+                    <li>Aqueça a água em uma panela média e, quando começar a ferver, adicione ao mesmo tempo a farinha, o sal e o açúcar. Mexa bem até a massa se soltar do fundo da panela, formando uma bola. Retire a massa da panela e deixe esfriar por cerca de 10 minutos.</li>
+                    <li>Em seguida, adicione aos poucos o ovo batido, a gema e a baunilha, mexendo sempre até ficar bem uniforme. Coloque a massa em um saco de confeiteiro com bico liso de 1 centímetro e esprema diretamente no óleo quente, usando uma tesoura para cortar a massa do tamanho desejado do churro.</li>
+                    <li>Frite por cerca de 3 minutos, até que os churros fiquem bem dourados. Deixe escorrer e finalize polvilhando uma misturinha feita com açúcar e canela. Depois de pronto, o churro pode ser mergulhado na cobertura que você preferir, como doce de leite, brigadeiro, goiabada, entre outras.</li>
                   </ol>
                 </div>
               </div>
@@ -60,3 +57,4 @@ export default function Pizza() {
     </BackgroundLayout>
   );
 }
+
