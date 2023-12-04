@@ -12,7 +12,7 @@ export default function Pizza() {
           <Outlet />
           <div className="flex justify-center">  
             <div className="text-red-900 max-w-3xl w-full font-bold text-3xl pt-4 pb-4 border-t-4 border-red-900 rounded-xl bg-white text-center">
-              Pizza de 4 Queijos
+              Churros com Chocolate
             </div> 
           </div>
 
@@ -22,22 +22,20 @@ export default function Pizza() {
                 <div className="col-span-2">
                   <h1 className="text-red-900 font-bold text-2xl">Ingredientes:</h1>
                   <ul className="list-disc ml-4">
-                    <li>2 xícaras (chá) de farinha de trigo.</li>
-                    <li>1 colher (sopa) de fermento em pó.</li>
-                    <li>meia colher (chá) de sal.</li>
-                    <li>1 xícara (chá) de água.</li>
-                    <li>4 colheres (sopa) de óleo.</li>
-                    <li>1 xícara (chá) de molho de tomate.</li>
-                    <li>1 unidade de queijo provolone.</li>
-                    <li>1 unidade de queijo gorgonzola.</li>
-                    <li>1 pacote de queijo muçarela ralado.</li>
-                    <li>1 pacote de parmesão ralado.</li>
-                    <li>1 colher (chá) de orégano.</li>
+                    <li>200 g de farinha de trigo;</li>
+                    <li>1 colher (chá) de sal;</li>
+                    <li>1 colher (sopa) de açúcar;</li>
+                    <li>275 ml de água;</li>
+                    <li>1 ovo;</li>
+                    <li>1 gema;</li>
+                    <li>1 colher (chá) de essência de baunilha;</li>
+                    <li>Óleo para fritar;</li>
+                    <li>Canela em pó e açúcar para polvilhar.</li>
                   </ul>
                 </div>
-                <div className="col-span flex flex-col items-center justify-center mt-8 relative overflow-hidden">
+                <div className="col-span- flex flex-col items-center justify-center mt-8 relative overflow-hidden">
                   <img
-                    src="/src/assets/imagens/imagensPizza/4queijo.png"
+                    src="src\assets\imagens\imagensDoce\churros.jpg"
                     alt="Pizza 4 Queijos"
                     className="border-2 mt-10 border-solid border-white"
                   />
@@ -45,12 +43,9 @@ export default function Pizza() {
                 <div className="col-span-3">
                   <h1 className="font-bold text-2xl text-red-900">Modo de Preparo:</h1>
                   <ol className="list-decimal ml-4">
-                  <li>Em um recipiente, coloque a farinha peneirada, o fermento e o sal e misture.</li>
-                    <li>Faça uma cova no centro e acrescente a água e o óleo.</li>
-                    <li>Amasse bem e abra com o rolo, formando uma massa lisa.</li>
-                    <li>Unte uma forma para pizza (média) e modele a massa dentro.</li>
-                    <li>Despeje sobre a massa um pouco de molho de tomate, coloque o queijo provolone em tiras, o queijo gorgonzola em pedaços pequenos, o queijo muçarela ralado e finalize com o parmesão ralado.</li>
-                    <li>Tempere com orégano e leve ao forno médio (180°C) preaquecido por 20 minutos, ou até a massa ficar assada.</li>
+                    <li>Aqueça a água em uma panela média e, quando começar a ferver, adicione ao mesmo tempo a farinha, o sal e o açúcar. Mexa bem até a massa se soltar do fundo da panela, formando uma bola. Retire a massa da panela e deixe esfriar por cerca de 10 minutos.</li>
+                    <li>Em seguida, adicione aos poucos o ovo batido, a gema e a baunilha, mexendo sempre até ficar bem uniforme. Coloque a massa em um saco de confeiteiro com bico liso de 1 centímetro e esprema diretamente no óleo quente, usando uma tesoura para cortar a massa do tamanho desejado do churro.</li>
+                    <li>Frite por cerca de 3 minutos, até que os churros fiquem bem dourados. Deixe escorrer e finalize polvilhando uma misturinha feita com açúcar e canela. Depois de pronto, o churro pode ser mergulhado na cobertura que você preferir, como doce de leite, brigadeiro, goiabada, entre outras.</li>
                   </ol>
                 </div>
               </div>
@@ -62,3 +57,4 @@ export default function Pizza() {
     </BackgroundLayout>
   );
 }
+

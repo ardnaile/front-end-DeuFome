@@ -19,6 +19,8 @@ import Macarraoabolonhesa from './routes/MacarraoBolonhese'
 import Macarraoquatroqueijos from './routes/Macarrao4Queijos'
 import MacarraocomSalsicha from './routes/MacarraoSalsicha'
 import Perfil from './routes/Perfil'
+import ChurroscomChocolate from './routes/churros'
+
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -94,6 +96,10 @@ const router = createBrowserRouter([
   {
     path:"/Perfil",
     element:<Perfil/>,
+  },
+  {
+    path:"/churros",
+    element:<ChurroscomChocolate/>,
   },
 ]);
 
