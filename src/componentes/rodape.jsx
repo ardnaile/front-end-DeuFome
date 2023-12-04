@@ -9,10 +9,10 @@ export default function () {
                  <ul className="mr-4 cursor-pointer hover:text-red-600" >contato</ul>
              </div>
              <div className=" bg-gray-800 flex items-center justify-center px-4 mb-8">
-                 <img className="w-24" src="/src/assets/imagens/icones/icons8-facebook-100.png" alt="" /> @deuFome?
-                 <img className="w-24" src="/src/assets/imagens/icones/icons8-instagram-100.png" alt="" /> @deuFome?
+                 <img className="w-24" src="/src/assets/imagens/icones/icons8-facebook-100.png" alt="" /> @DeuFome
+                 <img className="w-24" src="/src/assets/imagens/icones/icons8-instagram-100.png" alt="" /> @DeuFome
              </div> 
-            <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+            <p>&copy; 2023 Deu Fome. Todos os direitos reservados.</p>
         </footer>
     </div>
     )

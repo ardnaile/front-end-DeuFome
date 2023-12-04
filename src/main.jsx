@@ -18,6 +18,7 @@ import Pizzaquatroqueijos from './routes/PizzaFourQueijos'
 import Macarraoabolonhesa from './routes/MacarraoBolonhese'
 import Macarraoquatroqueijos from './routes/Macarrao4Queijos'
 import MacarraocomSalsicha from './routes/MacarraoSalsicha'
+import Perfil from './routes/Perfil'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
   {
     path:"/MacarraoSalsicha",
     element:<MacarraocomSalsicha/>,
+  },
+  {
+    path:"/Perfil",
+    element:<Perfil/>,
   },
 ]);
 
