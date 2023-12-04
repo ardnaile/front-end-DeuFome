@@ -12,7 +12,7 @@ export default function Categorias() {
           <h1 className="text-white text-7xl font-text_ale mt-10">CATEGORIAS</h1>
         </div>
         
-        <div className="container mx-auto grid grid-cols-4 gap-8 mb-4 bg-transparent">
+        <div className="container grid grid-cols-4 gap-8 mb-4 bg-transparent mx-auto">
           <div className='text-center text-white font-bold text-2xl pb-4 pt-6 relative'>
             <Link to="/Pizza-lista">
               <div className='relative w-96'>

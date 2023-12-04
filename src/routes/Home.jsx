@@ -61,8 +61,8 @@ export default function Home() {
             <p className="mb-4 font-text_ale border-l-2 border-red-900 p-2 w-50 m-2">"Tudo que se move e rasteja a gente flita, tudo é comida".</p>
           </div> 
       </div>
-      </BackgroundLayout>
       <Rodape/>
+      </BackgroundLayout>
     </div>
   );
 };

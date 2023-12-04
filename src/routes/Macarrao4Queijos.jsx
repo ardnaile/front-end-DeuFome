@@ -3,16 +3,16 @@ import NavBar from "../componentes/navbar";
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import Rodape from "../componentes/rodape";
 
-export default function Pizza() {
+export default function Macarrao4Queijos() {
   return (
     <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/Home.png')`}> 
+      <NavBar />
       <div className="flex justify-center items-center min-h-screen">
         <div className="bg-transparent p-8 rounded-xl">
-          <NavBar />
           <Outlet />
           <div className="flex justify-center">  
-            <div className="text-red-900 max-w-3xl w-full font-bold text-3xl pt-4 pb-4 border-t-4 border-red-900 rounded-xl bg-white text-center">
-              Macarrão à Bolonhesa
+            <div className="text-red-900 max-w-3xl w-full font-bold text-3xl pt-4 pb-4 border-t-4 border-red-900 mt-4 rounded-xl bg-white text-center">
+              Macarrão 4 queijos
             </div> 
           </div>
 
@@ -38,7 +38,7 @@ export default function Pizza() {
                   <img
                     src="src\assets\imagens\imagensMassas\MacarraoQueijo.jpg"
                     alt="Macarrão 4 Queijos"
-                    className="border-2 mt-10 border-solid border-white"
+                    className="rounded-xl border-2 mt-10 border-solid border-white"
                   />
                 </div>
                 <div className="col-span-3">

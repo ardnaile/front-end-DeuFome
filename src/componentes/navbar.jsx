@@ -24,7 +24,9 @@ export default function NavBar() {
             </div>
 
             <div className="flex justify-end items-center px-6">
-                <ul className="mr-4 cursor-pointer  text-xl hover:text-red-900 hover:font-semibold">Nome do usuario</ul>
+                <Link to="/Perfil">
+                    <ul className="mr-4 cursor-pointer  text-xl hover:text-red-900 hover:font-semibold">Usuário</ul>
+                </Link>
                 <Link to="/login">
                     <img className='w-14 cursor-pointer ' src="/src/assets/imagens/icones/user.png" alt="usuario" />
                 </Link>
