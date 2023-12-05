@@ -39,19 +39,21 @@ export default function Receitas() {
  
 
   return (
-    <div className="w-screen h-screen grid items-center justify-center">
+    <div className="min-h-screen flex flex-col">
       <NavBar onPesquisar={handlePesquisar} />
-      <div className="items-center justify-center flex mt-4">
-        <h1 className="mb-5 text-3xl font-semibold  text-red-900">Suas Receitas</h1>
+      <div className="flex items-center justify-center mt-4">
+      <h1 className="mb-5 text-3xl font-semibold text-red-900">
+      Suas Receitas
+      </h1>
       </div>
-      <div className=" mx-auto bg-white p-4  h-screen border-x-2 border-red-900 shadow-md rounded-md  space-y-5  mb-80 ">
+      <div className="mx-auto bg-white p-4 border-x-2 border-red-900 shadow-md rounded-md space-y-5 mb-80 overflow-y-auto">
       {filteredDivs.map((div) => (
         <div key={div.id} className="">
-          <h1 className=" text-red-900 font-bold text-2xl">{div.nome}</h1>
+          <h1 className="text-red-900 font-bold text-2xl">{div.nome}</h1>
           <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
-          <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 ml-2 text-white px-4 pt-2 py-2 mb-4 mt-4'>Compartilhar</button>
+          <button className='bg-red-500 hover.bg-red-600 rounded-2xl w-48 ml-2 text-white px-4 pt-2 py-2 mb-4 mt-4'>Compartilhar</button>
           <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 ml-2 text-white px-4 pt-2 py-2 mb-4 mt-4' onClick={handleEditar}>Editar</button> 
-          <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 ml-2 text-white px-4 pt-2 py-2 mb-4 mt-4' onClick={() => handleDeletar(div.id,div.nome)}>Deletar receita</button> 
+          <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 ml-2 text-white px-4 pt-2 py-2 mb-4 mt-4' onClick={() => handleDeletar(div.id, div.nome)}>Deletar receita</button> 
         </div>
         ))} 
       </div>
