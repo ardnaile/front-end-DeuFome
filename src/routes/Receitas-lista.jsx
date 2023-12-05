@@ -16,27 +16,36 @@ export default function Receitas() {
     {id: 9,nome: "Pizza de alface"},
   ]);
 
-  const [mensagemAlerta, setMensagemAlerta] = useState('');
+  const [filteredDivs, setFilteredDivs] = useState(divs);
 
   const handleDeletar = (id, nome) => {
-    const novasDivs = divs.filter(div => div.id !== id);
+    const novasDivs = divs.filter((div) => div.id !== id);
     setDivs(novasDivs);
+    setFilteredDivs(novasDivs);
     alert(`A receita "${nome}" foi deletada.`);
   };
  
-  const handleEditar = (id,nome) => {
+  const handleEditar = () => {
     alert("Essa função ainda não esta disponivel")
+  };
+
+  const handlePesquisar = (termo) => {
+    // Filtra as receitas com base no ID
+    const resultadoPesquisa = divs.filter((div) =>
+      div.id.toString().includes(termo)
+    );
+    setFilteredDivs(resultadoPesquisa);
   };
  
 
   return (
     <div className="w-screen h-screen grid items-center justify-center">
-      <NavBar/>
+      <NavBar onPesquisar={handlePesquisar} />
       <div className="items-center justify-center flex mt-4">
         <h1 className="mb-5 text-3xl font-semibold  text-red-900">Suas Receitas</h1>
       </div>
       <div className=" mx-auto bg-white p-4  h-screen border-x-2 border-red-900 shadow-md rounded-md  space-y-5  mb-80 ">
-        {divs.map(div => (
+      {filteredDivs.map((div) => (
         <div key={div.id} className="">
           <h1 className=" text-red-900 font-bold text-2xl">{div.nome}</h1>
           <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-48 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>

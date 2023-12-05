@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom"
+import { useState } from 'react';
 
-export default function NavBar() {
+export default function NavBar({ onPesquisar }) {
+    const [pesquisaValue, setPesquisaValue] = useState('');
+
+    const handlePesquisaChange = (event) => {
+        setPesquisaValue(event.target.value);
+        // Chame a função de pesquisa passando o valor da barra de pesquisa
+        onPesquisar(event.target.value);
+    }
+
     return (
      <nav className='relative'>
         <div className='w-screen mx-auto px-3 py-4 font-extra lights shadow-3xl  bg-white flex  items-center '>
@@ -18,9 +27,14 @@ export default function NavBar() {
                 <ul className="mr-4 cursor-pointer text-xl hover:text-red-900 hover:font-semibold">Minhas Receitas</ul> 
             </Link>
             <div className="mx-auto flex items-center justify-center">
-                <input className="px-2 py-2 text-2xl rounded-2xl transition duration-200 ease-in-out focus:outline-none bg-gray-50 border border-gray-800  w-96" type="text" placeholder="Pesquisar receitas" />   
+            <input
+                    className="px-2 py-2 text-2xl rounded-2xl transition duration-200 ease-in-out focus:outline-none bg-gray-50 border border-gray-800 w-96"
+                    type="text"
+                    placeholder="Pesquisar receitas"
+                    value={pesquisaValue}
+                    onChange={handlePesquisaChange}
+                />
                 <img className="w-12 mr-16" src="/src/assets/imagens/icones/search.svg" alt="" />
-                
             </div>
 
             <div className="flex justify-end items-center px-6">
@@ -30,22 +44,7 @@ export default function NavBar() {
                 <Link to="/login">
                     <img className='w-14 cursor-pointer ' src="/src/assets/imagens/icones/user.png" alt="usuario" />
                 </Link>
-            </div>
-                    
-
-                    {/* <Link className="cursor-pointer text-sm sm:text-base md:text-xl lg:text-1xl hover:font-semibold font-light px-2" to="/home">Home</Link>
-                    <div className='cursor-pointer text-sm sm:text-base md:text-xl lg:text-1xl hover:font-semibold font-light px-2'>Categorias</div>
-                    <Link className='cursor-pointer ext-sm sm:text-base md:text-xl lg:text-1xl hover:font-semibold font-light px-2' to="/CadReceita">
-                        <div>Montar Receita</div>
-                    </Link>
-                    <div className='cursor-pointer text-sm sm:text-base md:text-xl lg:text-1xl hover:font-semibold font-light px-2'>Receitas</div>
-
-                    <div className='mx-10'>
-                        <img className='w-10 cursor-pointer' src="/src/assets/imagens/icones/user.png" alt="usuario" />
-                        <Link className="cursor-pointer text-sm sm:text-base md:text-xl lg:text-1xl hover:font-semibold" to="/login">Entrar</Link>
-                    </div> */}
-               
-         
+            </div>        
         </div>
       </nav>
     )
