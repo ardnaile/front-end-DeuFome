@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
 import NavBar from '../componentes/navbar'
 import BackgroundLayout from "../estilos/VariosBackgrounds";
 import Rodape from '../componentes/rodape';
 import { Link } from "react-router-dom";
 
+
 export default function Pizza() {
+    const [modalOpen, setModalOpen] = useState(false);
+    const openModal = () => {
+        setModalOpen(true);
+      };
+      const closeModal = () => {
+        setModalOpen(false);
+      };
   return (
     <div className='mb-4'>
         <BackgroundLayout backgroundImage={`url('./src/assets/imagens/img-fundo/pizza.jpg')`}>
@@ -17,9 +25,14 @@ export default function Pizza() {
                     <div className="col-span-2">
                         <h1 className=" text-red-900 font-bold text-2xl">Churros com Chocolate</h1>
                         <p>Crocante por fora, macio por dentro e coberto por uma irresistível mistura de açúcar com canela, o churro é tão saboroso quanto versátil, já que sua receita básica pode ganhar sabores variados de acordo com o recheio desejado. A melhor parte, porém, é que fazer churros em casa é mais fácil do que se imagina - confira o passo a passo:</p>
-                        <Link to="/churros">
-                          <button className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'>Visualizar receita</button>
-                        </Link>
+                       
+                        <button
+                        onClick={openModal}
+                         className='bg-red-500 hover:bg-red-600 rounded-2xl w-60 text-white px-4 pt-2 py-2 mb-4 mt-4'
+                        >
+                        Visualizar receita
+                        </button>
+                        
                         <button className='bg-red-500 rounded-3xl mx-2 h-10 w-10'> usu </button>
                     </div>
                     <div className="col-span-1 flex flex-col items-center justify-center ">                  
@@ -122,6 +135,38 @@ export default function Pizza() {
 
             </div>
         </div>
+
+              {/* Modal */}
+      {modalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="relative bg-white p-8 rounded-md shadow-md max-h-screen overflow-y-auto w-full md:w-96">
+  <button onClick={closeModal} className="absolute top-0 right-0 p-4 text-black cursor-pointer">
+    X
+  </button>
+  <h1 className="text-red-900 font-bold text-2xl mb-4">Churros com Chocolate</h1>
+  <h1 className="text-red-900 font-bold text-2xl mb-4">Ingredientes:</h1>
+  <ul className="list-disc ml-4 text-base text-black">
+                    <li>200 g de farinha de trigo;</li>
+                    <li>1 colher (chá) de sal;</li>
+                    <li>1 colher (sopa) de açúcar;</li>
+                    <li>275 ml de água;</li>
+                    <li>1 ovo;</li>
+                    <li>1 gema;</li>
+                    <li>1 colher (chá) de essência de baunilha;</li>
+                    <li>Óleo para fritar;</li>
+                    <li>Canela em pó e açúcar para polvilhar.</li>
+                    </ul>
+
+                    <h1 className="font-bold text-2xl text-red-900 mt-4">Modo de Preparo:</h1>
+  <ol className="list-decimal ml-4 text-base text-black">
+                    <li>Aqueça a água em uma panela média e, quando começar a ferver, adicione ao mesmo tempo a farinha, o sal e o açúcar. Mexa bem até a massa se soltar do fundo da panela, formando uma bola. Retire a massa da panela e deixe esfriar por cerca de 10 minutos.</li>
+                    <li>Em seguida, adicione aos poucos o ovo batido, a gema e a baunilha, mexendo sempre até ficar bem uniforme. Coloque a massa em um saco de confeiteiro com bico liso de 1 centímetro e esprema diretamente no óleo quente, usando uma tesoura para cortar a massa do tamanho desejado do churro.</li>
+                    <li>Frite por cerca de 3 minutos, até que os churros fiquem bem dourados. Deixe escorrer e finalize polvilhando uma misturinha feita com açúcar e canela. Depois de pronto, o churro pode ser mergulhado na cobertura que você preferir, como doce de leite, brigadeiro, goiabada, entre outras.</li>
+                  </ol>
+          </div>
+        </div>
+      )}
         <Rodape/>
         </BackgroundLayout>
     </div>
