@@ -32,7 +32,7 @@ export default function Receitas() {
   const handlePesquisar = (termo) => {
     // Filtra as receitas com base no ID
     const resultadoPesquisa = divs.filter((div) =>
-      div.id.toString().includes(termo)
+      div.nome.toString().includes(termo)
     );
     setFilteredDivs(resultadoPesquisa);
   };
